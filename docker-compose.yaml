@@ -1,0 +1,13 @@
+version: '3'
+services:
+    hci_csi:
+       build:
+         context: .
+         dockerfile: Dockerfile
+       image: movies
+       user: "1001"
+       ports:
+         - "8000:5000"
+       environment:
+         - REACT_APP_STAGE=prod
+
