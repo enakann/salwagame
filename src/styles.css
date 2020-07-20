@@ -1,0 +1,176 @@
+body{
+ 
+  background-color:#010203;
+}
+
+
+.App {
+  text-align: center;
+  margin-top: 0px;
+
+}
+
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+ float:left;
+  height: 10vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #20262e;
+  margin: 10px auto 20px ;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 3, 0, 0.3);
+  width: 60%;
+  position: relative;
+  color:whitesmoke;
+}
+
+
+.PlayerWithPhoto {
+  box-shadow: 0 1px 2px #E4F0FF;
+  color: red;
+  width: 180px;
+  height: 45px;
+  font-weight: Bold;
+  float:left;
+  padding: 1px;
+  margin: 1px;
+font-family: 'Lexend Zetta', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+#main { 
+  width: 1000px;
+  margin: 0 auto;
+}
+#sidebar    {
+  margin-top: 20px;
+  margin-right: 10px;
+  width: 180px;
+  float: left;
+  border: 0.2px solid #20e2;
+  box-shadow:0.5px 0.75px 1px ;
+  background-color: #20262e;
+}
+
+#sidebar2 {
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 180px;
+  float: left;
+  border: 0.2px solid #20e2;
+  box-shadow:0.5px 0.75px 1px ;
+  background-color: #20262e;
+}
+
+#page-wrap  {
+  width: 500px;
+  float: left;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+body {
+  padding: 20px;
+  font-family: Helvetica;
+}
+
+.photo {
+  height: 350px;
+  width: 500px;
+  color: #fff;
+  box-shadow: 0px 1px 2px #ece;
+  padding: 10px;
+  position: relative;
+  background-color: #20262e;
+  margin-right: 100px;
+}
+
+.image-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+  grid-gap: 3px;
+  grid-auto-rows: 150px;
+}
+
+.image-list img{
+  width: 150px;
+  grid-row-end: span 1;
+}
+
+.wrapper {
+   	display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: repeat(10, 1fr);
+    width: 600px;
+    position:center;
+}
+
+.box {
+  background-color: #20262e;
+  color: #fff;
+  border-radius: 3px;
+  padding: 20px;
+  font-size: 14px;
+  margin: 10px;
+  display: block;
+  width:500px;
+  font-family: 'Lexend Zetta', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
