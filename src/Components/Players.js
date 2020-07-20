@@ -6,11 +6,12 @@ export default function Players(props) {
   var players1 = [];
   var players2 = [];
   var allPlayers = [];
-  var winner1 = { color: "#17a2b8", "fontSize": "13px" ,"float":"left"};
-  var loser1 = { color:"white" ,"float":"left","fontSize":"10px"};
+  // "#61dafb   17a2b8
+  var winner1 = { color: "#61dafb", "fontSize": "15px" ,"float":"left"};
+  var loser1 = { color:"lightgrey" ,"float":"left","fontSize":"12px" ,fontWeight:"Light"};
 
-  var winnerScore = { fontSize: "10px" };
-  var loserscore = { fontSize: "10px" };
+  var winnerScore = { fontSize: "15px" };
+  var loserscore = { fontSize: "13px" };
 
    let investigate = (e) =>{
        console.log(e)
