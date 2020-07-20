@@ -216,6 +216,7 @@ export default function App() {
   const [items,setItems] = useState(images)
   const [winners,SetWinners] = useState([])
   const [curQ,setCurQ] = useState("Lets Gooooo!!!")
+  const [line,setline] = useState(false)
 
 
  const setcurqcb = (q) => {
@@ -278,9 +279,8 @@ export default function App() {
   const Del=(id) =>{
     console.log(`DELETE ${id}`)
     let _items = [...items]
+    let _delitem=_items.filter(_item => _item.id === id)[0]
     let _newitems = _items.filter(_item => _item.id!==id)
-    console.log(_newitems)
-    setItems(_newitems) 
     if(_newitems.length ===0 ){
       console.log(`entered loop ${_newitems}`)
       let _players=[...players]
@@ -288,13 +288,19 @@ export default function App() {
          if (a.score > 0) return a;});
       let _pSorted = _NonZero.sort((a, b) => b.score - a.score);
       let _first3 = _pSorted.slice(0,2)
+
       setCurQ("CONGRATULATIONS!!!!!!!!!")
       SetDone(true)
-      console.log(_first3)
       SetWinners(_first3)
-      console.log(done)
-      
       }
+
+      _delitem.line=true
+      let _delitems = [_delitem,..._newitems]
+      setline(true)
+      setItems(_delitems)
+      console.log(_newitems)
+      setTimeout(()=>setItems(_newitems),1500)
+      // setItems(_newitems) 
     
   }
 
@@ -309,9 +315,9 @@ export default function App() {
       { !done ?
       (<div id="main">
     <Players allplayers={players} id="sidebar" type="even"
-              callback={onUserClick} />
+              callback={onUserClick}  />
      <div id="page-wrap">
-         {items.map(item => <Item delete= {Del}item={item} setcurqcb={setcurqcb} />)}
+         {items.map(item => <Item delete= {Del} item={item} line={item.line} setcurqcb={setcurqcb} />)}
      </div>
       <Players allplayers={players} id="sidebar2" type="odd"
               callback={onUserClick} /> 

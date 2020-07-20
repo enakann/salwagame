@@ -13,8 +13,10 @@ const Item = props => {
   };
   return (
     <div>
-      {!status ? (
-        <div onClick={() => callback()} className="box">
+      {!status ? ( 
+        <div onClick={() => callback()} style={{
+          textDecoration: props.line ? 'line-through' : 'none'
+        }}  className="box">
           {props.item.Question}
         </div>
       ) : (
