@@ -227,7 +227,8 @@ export default function App() {
  const reset = () => {
   console.log("reset called")
   axios.post(BACKEND_API, { players: allplayers });
-  setPlayers(allplayers);
+  // axios.get(BACKEND_API).then(res=>setPlayers(res.data))
+  setPlayers([...allplayers]);
 };
 
 
@@ -287,7 +288,7 @@ export default function App() {
       let _NonZero = _players.filter((a) => {
          if (a.score > 0) return a;});
       let _pSorted = _NonZero.sort((a, b) => b.score - a.score);
-      let _first3 = _pSorted.slice(0,2)
+      let _first3 = _pSorted.slice(0,3)
 
       setCurQ("CONGRATULATIONS!!!!!!!!!")
       SetDone(true)
@@ -298,7 +299,6 @@ export default function App() {
       let _delitems = [_delitem,..._newitems]
       setline(true)
       setItems(_delitems)
-      console.log(_newitems)
       setTimeout(()=>setItems(_newitems),1500)
       // setItems(_newitems) 
     
@@ -309,9 +309,9 @@ export default function App() {
   return (
  
     <div className="App">
-
-      <div  onClick={() => reset()}  ><img src={logo}  className="App-logo" alt="logo" /></div>
-      <Header curq={curQ}/>
+      
+      <Header curq={curQ} reset={reset}/>
+      
       { !done ?
       (<div id="main">
     <Players allplayers={players} id="sidebar" type="even"
@@ -323,12 +323,6 @@ export default function App() {
               callback={onUserClick} /> 
     </div>
     ):<div><Winner winners={winners} /></div>}
-    
-    
-    <div onClick={() => reset()}>
-    <img src={logo} className="App-logo" style={{"position":"absolute","right":"30px",top:"30px"}} alt="logo" />
-    </div>
-
 
     </div>
   );
