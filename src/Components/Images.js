@@ -104,7 +104,7 @@ const getbuffer = () =>{
       <button onClick={()=>delme(props.id)} type="button"
       class="btn btn-dark btn-sm donwload-button"> ❌</button>
      { !ans ?
-     <div class="carousel-wrapper">
+     <div class="carousel-wrapper" style={{"width":"400px","marginLeft":"50px"}}>
   <Carousel autoPlay>{getbuffer()}</Carousel>
   </div>
   :( <div className="photo">
