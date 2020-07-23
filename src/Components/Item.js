@@ -15,7 +15,8 @@ const Item = props => {
     <div>
       {!status ? ( 
         <div  onClick={() => callback()} style={{
-          textDecoration: props.line ? 'line-through' : 'none',textAlign:"center"
+          textDecoration: props.line ? 'line-through' : 'none',textAlign:"center",
+          textDecorationColor: props.line ? "#61dafb":"none"
         }}  className="box">
           <p style={{color:"#D3D3D3","marginBottom":"10px"}}>{props.item.Question}</p>
         </div>

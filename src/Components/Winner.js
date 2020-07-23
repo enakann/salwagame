@@ -11,7 +11,7 @@ export default function Winner(props){
               />
 
       {props.winners.map(winner =>{
-            return <div style={{"color":"red"}}><h2>{winner.name}</h2></div>
+            return <div style={{"color":"black"}}><h2>{winner.name}</h2></div>
       })}
     </div>
     )

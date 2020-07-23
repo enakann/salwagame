@@ -21,8 +21,11 @@ const Images = (props) =>{
     if(props.images.length >= 6){
       return {...photo,width:"800px","height":"550px"}
     }
-    else if(props.images.length >= 2 && props.images.length < 6){
-      return {...photo,width:"700px","height":"350px"}
+    else if(props.images.length == 2){
+      return {...photo,width:"500px","height":"350px"}
+    }
+    else if(props.images.length == 3){
+      return {...photo,width:"650px","height":"350px"}
     }
     else if(props.images.length==1){
       return {...photo,width:"350px",height:"350px"}
