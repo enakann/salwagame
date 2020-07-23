@@ -8,6 +8,29 @@ const Images = (props) =>{
   const ref = useRef()
   console.log(props)
 
+  const photo ={
+    color: "#fff",
+    boxShadow: "0px 1px 2px #ece",
+    padding: "10px",
+    position: "relative",
+    backgroundColor: "#20262e",
+    marginRight: "100px"
+  }
+
+  const getWidth = () =>{
+    if(props.images.length >= 6){
+      return {...photo,width:"800px","height":"550px"}
+    }
+    else if(props.images.length >= 2 && props.images.length < 6){
+      return {...photo,width:"700px","height":"350px"}
+    }
+    else if(props.images.length==1){
+      return {...photo,width:"350px",height:"350px"}
+    }
+
+
+  }
+
   // useEffect(()=>{
   //   document.body.addEventListener("click",(event)=>{
   //     console.log("me");
@@ -40,9 +63,10 @@ const delme = (id) => {
   }
 
 const content = _getImages()
-console.log(ref.current)
+const style=getWidth()
+console.log(style)
 return (
-  <div ref={ref} className="photo">
+  <div ref={ref} style={style}>
 
 <button onClick={clicked} type="button" 
 class="btn btn-dark btn-sm donwload-button">

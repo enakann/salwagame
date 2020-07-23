@@ -1,12 +1,12 @@
 body{
  
   background-color:#010203;
-  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS3O6t0k09V1X8jSOOvb9Pqth6ps4jLqnW9ng&usqp=CAU) no-repeat center center fixed; 
+  background: url(https://thewallpaper.co//wp-content/uploads/2016/10/free-images-black-and-red-backgrounds-full-hd-windows-10-backgrounds-amazing-download-wallpapers-hi-res-cool-best-colours-2560x1600.jpg) no-repeat center center fixed; 
+  background-position: 0px 0px ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
 
 
@@ -144,27 +144,19 @@ body {
   font-family: Helvetica;
 }
 
-.photo {
-  height: 350px;
-  width: 500px;
-  color: #fff;
-  box-shadow: 0px 1px 2px #ece;
-  padding: 10px;
-  position: relative;
-  background-color: #20262e;
-  margin-right: 100px;
-}
+
 
 .image-list{
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
-  grid-gap: 3px;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  grid-gap: 10px;
   grid-auto-rows: 150px;
 }
 
 .image-list img{
-  width: 150px;
+  width: 200px;
   grid-row-end: span 1;
+  margin-left: 10px;
 }
 
 .wrapper {
@@ -185,9 +177,9 @@ body {
   display: block;
   width:500px;
   height: 40px;
-  font-family: 'Red Rose', cursive;
+ font-family: 'Roboto', sans-serif;
   font-weight:10  ;
-  box-shadow:0.2px 0.5px #61dafb ;
+  box-shadow:0.2px 0.2px #61dafb ;
 }
 .Question {
   justify-content: stretch;

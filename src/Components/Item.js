@@ -17,7 +17,7 @@ const Item = props => {
         <div  onClick={() => callback()} style={{
           textDecoration: props.line ? 'line-through' : 'none',textAlign:"center"
         }}  className="box">
-          <p style={{color:"#E08A1E","marginBottom":"10px"}}>{props.item.Question}</p>
+          <p style={{color:"#D3D3D3","marginBottom":"10px"}}>{props.item.Question}</p>
         </div>
       ) : (
         <div>
