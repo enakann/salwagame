@@ -17,686 +17,687 @@ var BACKEND_API = config.REACT_APP_BACKEND_API;
 
 
 
-var images = [{
-  items: [
+var images = [
+   {
+    items: [
+      {
+        img: "/images/2guessactor/akshay.jpg",
+        alt: "first",
+        active: true,
+      },
+    ],
+      Question: "1. Guess the Actor",
+      Answer: "Akshay Kumar",
+      img: "/images/2guessactor/akshay_ans.jpg",
+      id:1
+   },
+   {
+    items: [
+      {
+        img: "/images/2guessactor/hema.jpg",
+        alt: "first",
+        active: true,
+      },
+    ],
+      Question: "2. Guess the Actor",
+      Answer: "Hema Malini",
+      img: "/images/2guessactor/hema_ans.jpg",
+      id:2
+   },
+   {
+    items: [
+      {
+        img: "/images/2guessactor/manoj_kumar.jpg",
+        alt: "first",
+        active: true,
+      },
+    ],
+      Question: "3. Guess the Actor",
+      Answer: "Manoj Kumar",
+      img: "/images/2guessactor/manoj_kumar_ans.jpg",
+      id:3
+   },
+   {
+    items: [
+      {
+        img: "/images/2guessactor/sridevi.jpg",
+        alt: "first",
+        active: true,
+      },
+    ],
+      Question: "4. Guess the Actor",
+      Answer: "Sridevi",
+      img: "/images/2guessactor/sridevi_ans.jpg",
+      id:4
+   },
     {
-      img: "/images/2guessactor/akshay.jpg",
-      alt: "first",
-      active: true,
-    },
-  ],
-    Question: "1. Guess the Actor",
-    Answer: "Akshay Kumar",
-    img: "/images/2guessactor/akshay_ans.jpg",
-    id:1
- },
- {
-  items: [
+    items: [
+      {
+        img: "/images/2guessactor/srk.jpg",
+        alt: "first",
+        active: true,
+      },
+    ],
+      Question: "5. Guess the Actor",
+      Answer: "Shahrukh Khan",
+      img: "/images/2guessactor/srk_ans.jpg",
+      id:5
+   },
+   {
+    items: [
+      {
+        img: "/images/3minpos/bb.png",
+        alt: "first",
+        active: true,
+      },
+    ],
+      Question: "6. Guess the movie",
+      Answer: "Bhool Bhulaiya",
+      img: "/images/3minpos/bb_ans.jpg",
+      id:6
+   },
     {
-      img: "/images/2guessactor/hema.jpg",
-      alt: "first",
-      active: true,
-    },
-  ],
-    Question: "2. Guess the Actor",
-    Answer: "Hema Malini",
-    img: "/images/2guessactor/hema_ans.jpg",
-    id:2
- },
- {
-  items: [
+    items: [
+      {
+        img: "/images/3minpos/ddlj.jpg",
+        alt: "first",
+        active: true,
+      },
+    ],
+      Question: "7. Guess the movie",
+      Answer: "Dilwale Dulhaniya Le Jayenge",
+      img: "/images/3minpos/ddlj_ans.png",
+      id:7
+   },
     {
-      img: "/images/2guessactor/manoj_kumar.jpg",
-      alt: "first",
-      active: true,
-    },
-  ],
-    Question: "3. Guess the Actor",
-    Answer: "Manoj Kumar",
-    img: "/images/2guessactor/manoj_kumar_ans.jpg",
-    id:3
- },
- {
-  items: [
+    items: [
+      {
+        img: "/images/3minpos/hera_pheri.jpg",
+        alt: "first",
+        active: true,
+      },
+    ],
+      Question: "8. Guess the movie",
+      Answer: "Hera Pheri",
+      img: "/images/3minpos/hera_pheri_ans.jpg",
+      id:8
+   },
     {
-      img: "/images/2guessactor/sridevi.jpg",
-      alt: "first",
-      active: true,
-    },
-  ],
-    Question: "4. Guess the Actor",
-    Answer: "Sridevi",
-    img: "/images/2guessactor/sridevi_ans.jpg",
-    id:4
- },
-  {
-  items: [
+    items: [
+      {
+        img: "/images/3minpos/inception.jpg",
+        alt: "first",
+        active: true,
+      },
+    ],
+      Question: "9. Guess the movie",
+      Answer: "Inception",
+      img: "/images/3minpos/inception_ans.jpg",
+      id:9
+   },
+   
+   {
+    items: [
+      {
+        img: "/images/3minpos/khamoshi.png",
+        alt: "first",
+        active: true,
+      },
+    ],
+      Question: "10. Guess the movie",
+      Answer: "Khamoshi",
+      img: "/images/3minpos/khamoshi_ans.jpg",
+      id:10
+   },
     {
-      img: "/images/2guessactor/srk.jpg",
-      alt: "first",
-      active: true,
-    },
-  ],
-    Question: "5. Guess the Actor",
-    Answer: "Shahrukh Khan",
-    img: "/images/2guessactor/srk_ans.jpg",
-    id:5
- },
- {
-  items: [
+    items: [
+      {
+        img: "/images/3minpos/matrix.jpg",
+        alt: "first",
+        active: true,
+      },
+    ],
+      Question: "11. Guess the movie",
+      Answer: "Matrix",
+      img: "/images/3minpos/matrix_ans.jpg",
+      id:11
+   },
+   
     {
-      img: "/images/3minpos/bb.png",
-      alt: "first",
-      active: true,
-    },
-  ],
-    Question: "6. Guess the movie",
-    Answer: "Bhool Bhulaiya",
-    img: "/images/3minpos/bb_ans.jpg",
-    id:6
- },
-  {
-  items: [
+    items: [
+      {
+        img: "/images/3minpos/mohabbatein.png",
+        alt: "first",
+        active: true,
+      },
+    ],
+      Question: "12. Guess the movie",
+      Answer: "Mohabbatein",
+      img: "/images/3minpos/mohabbatein_ans.jpg",
+      id:12
+   },
+   
+   {
+    items: [
+      {
+        img: "/images/3minpos/the_social_network.jpg",
+        alt: "first",
+        active: true,
+      },
+    ],
+   
+      Question: "13. Guess the movie",
+      Answer: "The Social Network",
+      img: "/images/3minpos/the_social_network_ans.jpg",
+      id:13
+   
+   },
+   
     {
-      img: "/images/3minpos/ddlj.jpg",
-      alt: "first",
-      active: true,
-    },
-  ],
-    Question: "7. Guess the movie",
-    Answer: "Dilwale Dulhaniya Le Jayenge",
-    img: "/images/3minpos/ddlj_ans.png",
-    id:7
- },
-  {
-  items: [
+    items: [
+      {
+        img: "/images/3minpos/titanic.jpg",
+        alt: "first",
+        active: true,
+      },
+    ],
+   
+      Question: "14. Guess the movie",
+      Answer: "Titanic",
+      img: "/images/3minpos/titanic_ans.jpg",
+      id:14
+   
+   },
+   
+   {
+    items: [
+      {
+        img: "/images/3minpos/truman_show.jpg",
+        alt: "first",
+        active: true,
+      },
+    ],
+   
+      Question: "15. Guess the movie",
+      Answer: "The Truman Show",
+      img: "/images/3minpos/truman_show_ans.jpg",
+      id:15
+   },
+   
+   
     {
-      img: "/images/3minpos/hera_pheri.jpg",
-      alt: "first",
-      active: true,
-    },
-  ],
-    Question: "8. Guess the movie",
-    Answer: "Hera Pheri",
-    img: "/images/3minpos/hera_pheri_ans.jpg",
-    id:8
- },
-  {
-  items: [
+    items: [
+      {
+        img: "/images/3minpos/wake_up_sid.jpg",
+        alt: "first",
+        active: true,
+      },
+    ],
+      Question: "16. Guess the movie",
+      Answer: "Wake up Sid",
+      img: "/images/3minpos/wake_up_sid_ans.jpg",
+      id:16
+   },
+   
+   
+   
     {
-      img: "/images/3minpos/inception.jpg",
-      alt: "first",
-      active: true,
-    },
-  ],
-    Question: "9. Guess the movie",
-    Answer: "Inception",
-    img: "/images/3minpos/inception_ans.jpg",
-    id:9
- },
- 
- {
-  items: [
+    items: [
+      {
+        img: "/images/4diags/anand_1.jpg",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/4diags/anand_2.jpg",
+        alt: "second",
+        active: false,
+      },
+    ],
+   
+      Question: "17. Guess the movie",
+      Answer: "Anand",
+      img: "/images/4diags/anand_ans.jpg",
+      id:17
+   },
+   
+   {
+    items: [
+      {
+        img: "/images/4diags/barfi_1.jpg",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/4diags/barfi_2.png",
+        alt: "second",
+        active: false,
+      },
+    ],
+      Question: "18. Guess the movie",
+      Answer: "Barfi",
+      img: "/images/4diags/barfi_ans.jpg",
+      id:18
+   },
+   
+   {
+    items: [
+      {
+        img: "/images/4diags/damini_1.png",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/4diags/damini_2.jpg",
+        alt: "second",
+        active: false,
+      },
+    ],
+   
+      Question: "19. Guess the movie",
+      Answer: "Damini",
+      img: "/images/4diags/damini_ans.jpg",
+      id:19
+   },
+   
+   {
+    items: [
+      {
+        img: "/images/4diags/dead_poets_society_1.jpg",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/4diags/dead_poets_society_2.jpg",
+        alt: "second",
+        active: false,
+      },
+    ],
+   
+      Question: "20. Guess the movie",
+      Answer: "Dead Poets Society",
+      img: "/images/4diags/dead_poets_society_ans.jpg",
+      id:20
+   },
+   
     {
-      img: "/images/3minpos/khamoshi.png",
-      alt: "first",
-      active: true,
-    },
-  ],
-    Question: "10. Guess the movie",
-    Answer: "Khamoshi",
-    img: "/images/3minpos/khamoshi_ans.jpg",
-    id:10
- },
-  {
-  items: [
+    items: [
+      {
+        img: "/images/4diags/fg_1.jpg",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/4diags/fg_2.jpg",
+        alt: "second",
+        active: false,
+      },
+    ],
+   
+      Question: "21. Guess the movie",
+      Answer: "Forrest Gump",
+      img: "/images/4diags/fg_ans.jpg",
+      id:21
+   },
+   
+   
+   {
+    items: [
+      {
+        img: "/images/4diags/fn_1.jpg",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/4diags/fn_2.jpg",
+        alt: "second",
+        active: false,
+      },
+    ],
+      Question: "22. Guess the movie",
+      Answer: "Finding Nemo",
+      img: "/images/4diags/fn_ans.png",
+      id:22
+   },
+   
+   
+   {
+    items: [
+      {
+        img: "/images/4diags/gangs_of_was_1.png",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/4diags/gangs_of_was_2.jpg",
+        alt: "second",
+        active: false,
+      },
+    ],
+      Question: "23. Guess the movie",
+      Answer: "Gangs of Wasseypur",
+      img: "/images/4diags/gangs_of_was_ans.jpeg",
+      id:23
+   },
+   
+   
+   
+   {
+    items: [
+      {
+        img: "/images/4diags/gf_1.jpg",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/4diags/gf_2.jpg",
+        alt: "second",
+        active: false,
+      },
+    ],
+   
+      Question: "24. Guess the movie",
+      Answer: "Godfather",
+      img: "/images/4diags/gf_ans.jpg",
+      id:24
+   
+   },
+   
     {
-      img: "/images/3minpos/matrix.jpg",
-      alt: "first",
-      active: true,
-    },
-  ],
-    Question: "11. Guess the movie",
-    Answer: "Matrix",
-    img: "/images/3minpos/matrix_ans.jpg",
-    id:11
- },
- 
-  {
-  items: [
+    items: [
+      {
+        img: "/images/4diags/kalia_1.jpg",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/4diags/kalia_2.jpg",
+        alt: "second",
+        active: false,
+      },
+    ],
+   
+      Question: "25. Guess the movie",
+      Answer: "Kalia",
+      img: "/images/4diags/kalia_ans.jpg",
+      id:25
+   },
+   
+   {
+    items: [
+      {
+        img: "/images/4diags/pursuit_of_happyness_1.jpg",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/4diags/pursuit_of_happyness_2.jpg",
+        alt: "second",
+        active: false,
+      },
+    ],
+   
+      Question: "26. Guess the movie",
+      Answer: "Pursuit of Happyness",
+      img: "/images/4diags/pursuit_of_happyness_ans.png",
+      id:26
+   
+   },
+   
+   
+   
+   {
+    items: [
+      {
+        img: "/images/1title_pics/7_1.jpg",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/1title_pics/7_2.jpg",
+        alt: "second",
+        active: false,
+      },
+      {
+        img: "/images/1title_pics/7_3.jpg",
+        alt: "third",
+        active: false,
+      },
+      {
+        img: "/images/1title_pics/7_4.png",
+        alt: "fourth",
+        active: false,
+      },
+      {
+        img: "/images/1title_pics/7_5.jpg",
+        alt: "fifth",
+        active: false,
+      },
+      {
+        img: "/images/1title_pics/7_6.jpg",
+        alt: "sixth",
+        active: false,
+      },
+      {
+        img: "/images/1title_pics/7_7.jpg",
+        alt: "seventh",
+        active: false,
+      },
+   
+    ],
+   
+      Question: "27. Guess the Movie",
+      Answer: "Seven",
+      img: "/images/1title_pics/7_ans.jpg",
+      id:27
+   
+   },
+   
+   {
+    items: [
+      {
+        img: "/images/1title_pics/12am_1.jpg",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/1title_pics/12am_2.jpg",
+        alt: "second",
+        active: false,
+      },
+      {
+        img: "/images/1title_pics/12am_3.jpg",
+        alt: "third",
+        active: false,
+      },
+   
+    ],
+   
+      Question: "28. Guess the Movie",
+      Answer: "12 Angry Men",
+      img: "/images/1title_pics/12am_ans.jpg",
+      id:28
+   },
+   
+   {
+    items: [
+      {
+        img: "/images/1title_pics/black_1.jpg",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/1title_pics/black_2.jpg",
+        alt: "second",
+        active: false,
+      },
+   
+    ],
+   
+      Question: "29. Guess the Movie",
+      Answer: "Black",
+      img: "/images/1title_pics/black_ans.jpg",
+      id:29
+   },
+   
+   
     {
-      img: "/images/3minpos/mohabbatein.png",
-      alt: "first",
-      active: true,
-    },
-  ],
-    Question: "12. Guess the movie",
-    Answer: "Mohabbatein",
-    img: "/images/3minpos/mohabbatein_ans.jpg",
-    id:12
- },
- 
- {
-  items: [
+    items: [
+      {
+        img: "/images/1title_pics/fight_club_1.png",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/1title_pics/fight_club_2.png",
+        alt: "second",
+        active: false,
+      },
+   
+    ],
+   
+      Question: "30. Guess the Movie",
+      Answer: "Fight Club",
+      img: "/images/1title_pics/fight_club_ans.jpg",
+      id:30
+   },
+   
+   
+   {
+    items: [
+      {
+        img: "/images/1title_pics/imitation_game_1.png",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/1title_pics/imitation_game_2.png",
+        alt: "second",
+        active: false,
+      },
+   
+    ],
+   
+      Question: "31. Guess the Movie",
+      Answer: "Imitation Game",
+      img: "/images/1title_pics/imitation_game_ans.jpg",
+      id:31
+   },
+   
+   
+   
     {
-      img: "/images/3minpos/the_social_network.jpg",
-      alt: "first",
-      active: true,
-    },
-  ],
- 
-    Question: "13. Guess the movie",
-    Answer: "The Social Network",
-    img: "/images/3minpos/the_social_network_ans.jpg",
-    id:13
- 
- },
- 
-  {
-  items: [
-    {
-      img: "/images/3minpos/titanic.jpg",
-      alt: "first",
-      active: true,
-    },
-  ],
- 
-    Question: "14. Guess the movie",
-    Answer: "Titanic",
-    img: "/images/3minpos/titanic_ans.jpg",
-    id:14
- 
- },
- 
- {
-  items: [
-    {
-      img: "/images/3minpos/truman_show.jpg",
-      alt: "first",
-      active: true,
-    },
-  ],
- 
-    Question: "15. Guess the movie",
-    Answer: "The Truman Show",
-    img: "/images/3minpos/truman_show_ans.jpg",
-    id:15
- },
- 
- 
-  {
-  items: [
-    {
-      img: "/images/3minpos/wake_up_sid.jpg",
-      alt: "first",
-      active: true,
-    },
-  ],
-    Question: "16. Guess the movie",
-    Answer: "Wake up Sid",
-    img: "/images/3minpos/wake_up_sid_ans.jpg",
-    id:16
- },
- 
- 
- 
-  {
-  items: [
-    {
-      img: "/images/4diags/anand_1.jpg",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/4diags/anand_2.jpg",
-      alt: "second",
-      active: false,
-    },
-  ],
- 
-    Question: "17. Guess the movie",
-    Answer: "Anand",
-    img: "/images/4diags/anand_ans.jpg",
-    id:17
- },
- 
- {
-  items: [
-    {
-      img: "/images/4diags/barfi_1.jpg",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/4diags/barfi_2.png",
-      alt: "second",
-      active: false,
-    },
-  ],
-    Question: "18. Guess the movie",
-    Answer: "Barfi",
-    img: "/images/4diags/barfi_ans.jpg",
-    id:18
- },
- 
- {
-  items: [
-    {
-      img: "/images/4diags/damini_1.png",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/4diags/damini_2.jpg",
-      alt: "second",
-      active: false,
-    },
-  ],
- 
-    Question: "19. Guess the movie",
-    Answer: "Damini",
-    img: "/images/4diags/damini_ans.jpg",
-    id:19
- },
- 
- {
-  items: [
-    {
-      img: "/images/4diags/dead_poets_society_1.jpg",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/4diags/dead_poets_society_2.jpg",
-      alt: "second",
-      active: false,
-    },
-  ],
- 
-    Question: "20. Guess the movie",
-    Answer: "Dead Poets Society",
-    img: "/images/4diags/dead_poets_society_ans.jpg",
-    id:20
- },
- 
-  {
-  items: [
-    {
-      img: "/images/4diags/fg_1.jpg",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/4diags/fg_2.jpg",
-      alt: "second",
-      active: false,
-    },
-  ],
- 
-    Question: "21. Guess the movie",
-    Answer: "Forrest Gump",
-    img: "/images/4diags/fg_ans.jpg",
-    id:21
- },
- 
- 
- {
-  items: [
-    {
-      img: "/images/4diags/fn_1.jpg",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/4diags/fn_2.jpg",
-      alt: "second",
-      active: false,
-    },
-  ],
-    Question: "22. Guess the movie",
-    Answer: "Finding Nemo",
-    img: "/images/4diags/fn_ans.png",
-    id:22
- },
- 
- 
- {
-  items: [
-    {
-      img: "/images/4diags/gangs_of_was_1.png",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/4diags/gangs_of_was_2.jpg",
-      alt: "second",
-      active: false,
-    },
-  ],
-    Question: "23. Guess the movie",
-    Answer: "Gangs of Wasseypur",
-    img: "/images/4diags/gangs_of_was_ans.jpeg",
-    id:23
- },
- 
- 
- 
- {
-  items: [
-    {
-      img: "/images/4diags/gf_1.jpg",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/4diags/gf_2.jpg",
-      alt: "second",
-      active: false,
-    },
-  ],
- 
-    Question: "24. Guess the movie",
-    Answer: "Godfather",
-    img: "/images/4diags/gf_ans.jpg",
-    id:24
- 
- },
- 
-  {
-  items: [
-    {
-      img: "/images/4diags/kalia_1.jpg",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/4diags/kalia_2.jpg",
-      alt: "second",
-      active: false,
-    },
-  ],
- 
-    Question: "25. Guess the movie",
-    Answer: "Kalia",
-    img: "/images/4diags/kalia_ans.jpg",
-    id:25
- },
- 
- {
-  items: [
-    {
-      img: "/images/4diags/pursuit_of_happyness_1.jpg",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/4diags/pursuit_of_happyness_2.jpg",
-      alt: "second",
-      active: false,
-    },
-  ],
- 
-    Question: "26. Guess the movie",
-    Answer: "Pursuit of Happyness",
-    img: "/images/4diags/pursuit_of_happyness_ans.png",
-    id:26
- 
- },
- 
- 
- 
- {
-  items: [
-    {
-      img: "/images/1title_pics/7_1.jpg",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/1title_pics/7_2.jpg",
-      alt: "second",
-      active: false,
-    },
-    {
-      img: "/images/1title_pics/7_3.jpg",
-      alt: "third",
-      active: false,
-    },
-    {
-      img: "/images/1title_pics/7_4.png",
-      alt: "fourth",
-      active: false,
-    },
-    {
-      img: "/images/1title_pics/7_5.jpg",
-      alt: "fifth",
-      active: false,
-    },
-    {
-      img: "/images/1title_pics/7_6.jpg",
-      alt: "sixth",
-      active: false,
-    },
-    {
-      img: "/images/1title_pics/7_7.jpg",
-      alt: "seventh",
-      active: false,
-    },
- 
-  ],
- 
-    Question: "27. Guess the Movie",
-    Answer: "Seven",
-    img: "/images/1title_pics/7_ans.jpg",
-    id:27
- 
- },
- 
- {
-  items: [
-    {
-      img: "/images/1title_pics/12am_1.jpg",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/1title_pics/12am_2.jpg",
-      alt: "second",
-      active: false,
-    },
-    {
-      img: "/images/1title_pics/12am_3.jpg",
-      alt: "third",
-      active: false,
-    },
- 
-  ],
- 
-    Question: "28. Guess the Movie",
-    Answer: "12 Angry Men",
-    img: "/images/1title_pics/12am_ans.jpg",
-    id:28
- },
- 
- {
-  items: [
-    {
-      img: "/images/1title_pics/black_1.jpg",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/1title_pics/black_2.jpg",
-      alt: "second",
-      active: false,
-    },
- 
-  ],
- 
-    Question: "29. Guess the Movie",
-    Answer: "Black",
-    img: "/images/1title_pics/black_ans.jpg",
-    id:29
- },
- 
- 
-  {
-  items: [
-    {
-      img: "/images/1title_pics/fight_club_1.png",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/1title_pics/fight_club_2.png",
-      alt: "second",
-      active: false,
-    },
- 
-  ],
- 
-    Question: "30. Guess the Movie",
-    Answer: "Fight Club",
-    img: "/images/1title_pics/fight_club_ans.jpg",
-    id:30
- },
- 
- 
- {
-  items: [
-    {
-      img: "/images/1title_pics/imitation_game_1.png",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/1title_pics/imitation_game_2.png",
-      alt: "second",
-      active: false,
-    },
- 
-  ],
- 
-    Question: "31. Guess the Movie",
-    Answer: "Imitation Game",
-    img: "/images/1title_pics/imitation_game_ans.jpg",
-    id:31
- },
- 
- 
- 
-  {
-  items: [
-    {
-      img: "/images/1title_pics/lagan_1.png",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/1title_pics/lagan_2.jpg",
-      alt: "second",
-      active: false,
-    },
-    {
-      img: "/images/1title_pics/lagan_3.jpg",
-      alt: "third",
-      active: false,
-    },
- 
-  ],
- 
-    Question: "32. Guess the Movie",
-    Answer: "Lagaan",
-    img: "/images/1title_pics/lagan_ans.jpg",
-    id:32
- },
- 
- 
- 
- {
-  items: [
-    {
-      img: "/images/1title_pics/lunch_box_1.jpg",
-      alt: "first",
-      active: true,
-    },
- 
-  ],
- 
-    Question: "33. Guess the Movie",
-    Answer: "Lunch Box",
-    img: "/images/1title_pics/lunch_box_ans.jpg",
-    id:33
- 
- },
- 
- {
-  items: [
-    {
-      img: "/images/1title_pics/october_1.jpg",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/1title_pics/october_2.png",
-      alt: "second",
-      active: false,
-    },
-    {
-      img: "/images/1title_pics/october_3.jpg",
-      alt: "third",
-      active: false,
-    },
- 
-  ],
- 
-    Question: "34. Guess the Movie",
-    Answer: "October",
-    img: "/images/1title_pics/october_ans.jpg",
-    id:34
- },
- 
- {
-  items: [
-    {
-      img: "/images/1title_pics/toy_story_1.png",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/1title_pics/toy_story_2.jpg",
-      alt: "second",
-      active: false,
-    },
- 
-  ],
- 
-    Question: "35. Guess the Movie",
-    Answer: "Toy Story",
-    img: "/images/1title_pics/toy_story_ans.jpg",
-    id:35
- },
- 
- {
-  items: [
-    {
-      img: "/images/1title_pics/ugly_1.jpeg",
-      alt: "first",
-      active: true,
-    },
-    {
-      img: "/images/1title_pics/ugly_2.jpg",
-      alt: "second",
-      active: false,
-    },
- 
-  ],
- 
-    Question: "36. Guess the Movie",
-    Answer: "Ugly",
-    img: "/images/1title_pics/ugly_ans.jpg",
-    id:36
- },
+    items: [
+      {
+        img: "/images/1title_pics/lagan_1.png",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/1title_pics/lagan_2.jpg",
+        alt: "second",
+        active: false,
+      },
+      {
+        img: "/images/1title_pics/lagan_3.jpg",
+        alt: "third",
+        active: false,
+      },
+   
+    ],
+   
+      Question: "32. Guess the Movie",
+      Answer: "Lagaan",
+      img: "/images/1title_pics/lagan_ans.jpg",
+      id:32
+   },
+   
+   
+   
+   {
+    items: [
+      {
+        img: "/images/1title_pics/lunch_box_1.jpg",
+        alt: "first",
+        active: true,
+      },
+   
+    ],
+   
+      Question: "33. Guess the Movie",
+      Answer: "Lunch Box",
+      img: "/images/1title_pics/lunch_box_ans.jpg",
+      id:33
+   
+   },
+   
+   {
+    items: [
+      {
+        img: "/images/1title_pics/october_1.jpg",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/1title_pics/october_2.png",
+        alt: "second",
+        active: false,
+      },
+      {
+        img: "/images/1title_pics/october_3.jpg",
+        alt: "third",
+        active: false,
+      },
+   
+    ],
+   
+      Question: "34. Guess the Movie",
+      Answer: "October",
+      img: "/images/1title_pics/october_ans.jpg",
+      id:34
+   },
+   
+   {
+    items: [
+      {
+        img: "/images/1title_pics/toy_story_1.png",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/1title_pics/toy_story_2.jpg",
+        alt: "second",
+        active: false,
+      },
+   
+    ],
+   
+      Question: "35. Guess the Movie",
+      Answer: "Toy Story",
+      img: "/images/1title_pics/toy_story_ans.jpg",
+      id:35
+   },
+   
+   {
+    items: [
+      {
+        img: "/images/1title_pics/ugly_1.jpeg",
+        alt: "first",
+        active: true,
+      },
+      {
+        img: "/images/1title_pics/ugly_2.jpg",
+        alt: "second",
+        active: false,
+      },
+   
+    ],
+   
+      Question: "36. Guess the Movie",
+      Answer: "Ugly",
+      img: "/images/1title_pics/ugly_ans.jpg",
+      id:36
+   },
  
  ]
 
@@ -829,7 +830,7 @@ export default function App() {
       let _delitems = [_delitem,..._newitems]
       setline(true)
       setItems(_delitems)
-      setTimeout(()=>setItems(_newitems),1500)
+      setTimeout(()=>setItems(_newitems),1000)
       // setItems(_newitems) 
     
   }
