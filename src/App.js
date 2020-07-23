@@ -690,6 +690,11 @@ var images = [
         alt: "second",
         active: false,
       },
+	        {
+        img: "/images/1title_pics/ugly_3.png",
+        alt: "second",
+        active: false,
+      },
    
     ],
    

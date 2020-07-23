@@ -10,7 +10,7 @@ def redadir():
     for subdir, dirs, files in os.walk(rootdir):
         for file in files:
             filename,ext=file.split(".")
-            if ext in ["png","jpg","jpeg","png"]:
+            if ext in ["png","jpg","jpeg","png"] and filename=="ugly_3":
                     f=os.path.join(subdir, file)
                     print(f)
                     im = Image.open(f)
