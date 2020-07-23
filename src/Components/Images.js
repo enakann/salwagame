@@ -108,7 +108,7 @@ const getbuffer = () =>{
   <Carousel autoPlay>{getbuffer()}</Carousel>
   </div>
   :( <div className="photo">
-  <div style={{"border":"1px solid black"}}>{props.ans}
+  <div style={{"border":"1px solid black"}}><p style={{color:"white",marginTop:"5px"}}>{props.ans}</p></div>
   <div className="card-body" style={{"width":"100%"}}>
   
   <img style={{height:"40%"}}
@@ -117,7 +117,7 @@ const getbuffer = () =>{
    alt="missing"
   />
   </div>
-  </div>
+  
   </div>)}
   </div>
   );
